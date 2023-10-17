@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+int main(){
+    float b,h;
+    float l,w;
+    float traingle,rectangle;
+    cout<<"For area of traingle:\n";
+    cout<<"Enter the value of base:";
+    cin>>b;
+    cout<<"Enter the value of height:";
+    cin>>h;
+    traingle=(b*h)/2;
+    cout<<"The area of traingle is: "<<traingle;
+    cout<<"\nFor area of rectangle:\n";
+    cout<<"Enter the value of length:";
+    cin>>l;
+    cout<<"Enter the breadth value:";
+    cin>>w;
+    rectangle=l*w;
+    cout<<"The area of rectangle is:"<<rectangle;
+}

@@ -1,0 +1,32 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float a,b,c;
+    float quad,quad1,quad2;
+    float D;
+    cout<<"Enter the coefficient of a:";
+    cin>>a;
+    cout<<"Enter the coefficient of b:";
+    cin>>b;
+    cout<<"Enter the coefficient of c:";
+    cin>>c;
+    D= b*b - 4*a*c;
+    if (D<0){
+        cout<<"Roots values are imaginary\n";
+    }
+    else if (D==0){
+        cout<<"Roots are real and same\n";
+        quad=-b/2*a;
+    }
+    else if (D>0){
+        cout<<"Roots are real and different\n";
+        quad1=(-b+sqrt(D))/(2*a);
+        quad2=(-b-sqrt(D))/(2*a);
+        cout<<"The roots are:\n";
+        cout<<quad1<<endl;
+        cout<<quad2<<endl;
+    
+}
+}
